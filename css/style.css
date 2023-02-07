@@ -21,7 +21,7 @@ header{
 
 main{
     width:100%;
-    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    max-width:1400px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 3%;
@@ -109,7 +109,7 @@ footer{
     width: 100%;
     height: 0;
     padding: 30% 0;
-    background-image: url(../assets/images/3.jpg); /*change the image to one of you choice */
+    background-image: url(../assets/images/3.jpg); 
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -117,7 +117,7 @@ footer{
     text-align: center;
     text-decoration: none;
     color:#ffffff;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+    transition: all 0.2s;
 }
 
 .flex-item4 a{
@@ -125,7 +125,7 @@ footer{
     width: 100%;
     height: 0;
     padding: 30% 0;
-    background-image: url(../assets/images/4.jpg); /*change the image to one of you choice */
+    background-image: url(../assets/images/4.jpg); 
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -133,8 +133,9 @@ footer{
     text-align: center;
     text-decoration: none;
     color:#4f4f4f;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+    transition: all 0.2s;
 }
+
 .flex-item1 a:hover{
     color:#bbbbbb;
     background-size: 120%;
@@ -179,11 +180,6 @@ footer{
     padding:5px 10px;
  }
 
-/* Media Queries for responsive design */
-
-/* Un-comment the body background-colors to see bold debug color change between screen sizes */
-
-/* Extra large */
 @media screen and (max-width: 1200px) {
     /* body {
       background-color: rgb(0, 255, 162);
