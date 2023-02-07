@@ -33,32 +33,42 @@ footer{
     min-height:100px;
 }
 
-
-/* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
-
 .flex-container{
-    display: flex; /* all children will now be flex items */
-    flex-direction: row; /* other option is column */
-    flex-wrap: wrap; /* means the children will wrap to a new line */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-item1{
     display: flex;
-    /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
-    box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+    flex-basis: 25%;
+    box-sizing: border-box;
     padding: 5px;
 }
 .flex-item2{
     display: flex;
-    /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
-    box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.flex-item3{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.flex-item4{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
     padding: 5px;
 }
 
@@ -74,8 +84,8 @@ footer{
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color:#4f4f4f;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+    color:#ffffff;
+    transition: all 0.2s; 
 }
 
 .flex-item2 a{
@@ -83,7 +93,39 @@ footer{
     width: 100%;
     height: 0;
     padding: 30% 0;
-    background-image: url(../assets/images/2.jpeg); /*change the image to one of you choice */
+    background-image: url(../assets/images/2.jpeg);
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s;
+}
+
+.flex-item3 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/3.jpg); /*change the image to one of you choice */
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#ffffff;
+    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item4 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/4.jpg); /*change the image to one of you choice */
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -93,13 +135,6 @@ footer{
     color:#4f4f4f;
     transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
-/* want a different background image for each project? */
-/* try give each a tag a unique id in your HTML and then set different background images here*/
-/* EXAMPLE CSS: won't work if you just un-comment this:*/
-/* .flex-item a#my-special-id{
-    background-image: url(../assets/images/custom-image-name.jpeg); 
-} */
-
 .flex-item1 a:hover{
     color:#bbbbbb;
     background-size: 120%;
@@ -110,13 +145,35 @@ footer{
     background-size: 120%;
 }
 
+.flex-item3 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item4 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
 .flex-item1 h4{
+    margin:10px;
+    background-color: #4f4f4f;
+    padding:5px 10px;
+ }
+
+ .flex-item2 h4{
     margin:10px;
     background-color: white;
     padding:5px 10px;
  }
 
- .flex-item2 h4{
+ .flex-item3 h4{
+    margin:10px;
+    background-color: #4f4f4f;
+    padding:5px 10px;
+ }
+
+ .flex-item4 h4{
     margin:10px;
     background-color: white;
     padding:5px 10px;
@@ -136,6 +193,12 @@ footer{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item2{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item3{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item4{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
@@ -160,6 +223,12 @@ footer{
     .flex-item2{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
     }
+    .flex-item3{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item4{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
 }
 
 /* Small */
@@ -172,6 +241,12 @@ footer{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item2{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item3{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item4{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
