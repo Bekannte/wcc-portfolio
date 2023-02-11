@@ -80,6 +80,33 @@ footer{
     padding: 5px;
 }
 
+.flex-item6{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.flex-item7{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.flex-item8{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
 .flex-item1 a{
     display: flex;
     width: 100%;
@@ -160,6 +187,54 @@ footer{
     transition: all 0.2s; 
 }
 
+.flex-item6 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/5.jpg); 
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s; 
+}
+
+.flex-item7 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/repeating-diagonal-lines.jpeg); 
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s; 
+}
+
+.flex-item8 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/6.jpg); 
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s; 
+}
+
 .flex-item1 a:hover{
     color:#bbbbbb;
     background-size: 120%;
@@ -181,6 +256,21 @@ footer{
 }
 
 .flex-item5 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item6 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item7 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item8 a:hover{
     color:#bbbbbb;
     background-size: 120%;
 }
@@ -215,6 +305,24 @@ footer{
     padding:5px 10px;
  }
 
+ .flex-item6 h4{
+    margin:10px;
+    background-color: white;
+    padding:5px 10px;
+ }
+
+ .flex-item7 h4{
+    margin:10px;
+    background-color: white;
+    padding:5px 10px;
+ }
+
+ .flex-item8 h4{
+    margin:10px;
+    background-color: white;
+    padding:5px 10px;
+ }
+
 @media screen and (max-width: 1200px) {
     /* body {
       background-color: rgb(0, 255, 162);
@@ -233,6 +341,15 @@ footer{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item5{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item6{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item7{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item8{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
@@ -266,6 +383,15 @@ footer{
     .flex-item5{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
     }
+    .flex-item6{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item7{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item8{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
 }
 
 /* Small */
@@ -287,6 +413,15 @@ footer{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item5{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item6{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item7{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item8{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
