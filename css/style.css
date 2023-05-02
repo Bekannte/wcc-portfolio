@@ -71,7 +71,7 @@ footer{
     box-sizing: border-box;
     padding: 5px;
 }
-.flex-item5{
+/* .flex-item5{
     display: flex;
     flex-grow: 0;
     flex-shrink: 0;
@@ -114,7 +114,7 @@ footer{
     flex-basis: 25%;
     box-sizing: border-box;
     padding: 5px;
-}
+} */
 
 .flex-item10{
     display: flex;
@@ -161,6 +161,14 @@ footer{
     padding: 5px;
 }
 
+.flex-item15{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
 
 .flex-item1 a{
     display: flex;
@@ -225,7 +233,7 @@ footer{
     color:#4f4f4f;
     transition: all 0.2s;
 }
-
+/* 
 .flex-item5 a{
     display: flex;
     width: 100%;
@@ -304,7 +312,7 @@ footer{
     text-decoration: none;
     color:#4f4f4f;
     transition: all 0.2s; 
-}
+} */
 
 .flex-item10 a{
     display: flex;
@@ -386,6 +394,23 @@ footer{
     transition: all 0.2s; 
 }
 
+.flex-item15 a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/15.png); 
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s; 
+}
+
+
 
 .flex-item1 a:hover{
     color:#bbbbbb;
@@ -406,7 +431,7 @@ footer{
     color:#bbbbbb;
     background-size: 120%;
 }
-
+/* 
 .flex-item5 a:hover{
     color:#bbbbbb;
     background-size: 120%;
@@ -430,7 +455,7 @@ footer{
 .flex-item9 a:hover{
     color:#bbbbbb;
     background-size: 120%;
-}
+} */
 
 .flex-item10 a:hover{
     color:#bbbbbb;
@@ -453,6 +478,11 @@ footer{
 }
 
 .flex-item14 a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item15 a:hover{
     color:#bbbbbb;
     background-size: 120%;
 }
@@ -480,7 +510,7 @@ footer{
     background-color: white;
     padding:5px 10px;
  }
-
+/* 
  .flex-item5 h4{
     margin:10px;
     background-color: white;
@@ -509,7 +539,7 @@ footer{
     margin:10px;
     background-color: white;
     padding:5px 10px;
- }
+ } */
 
  .flex-item10 h4{
     margin:10px;
@@ -541,10 +571,13 @@ footer{
     padding:5px 10px;
  }
 
+ .flex-item15 h4{
+    margin:10px;
+    background-color: white;
+    padding:5px 10px;
+ }
+
 @media screen and (max-width: 1200px) {
-    /* body {
-      background-color: rgb(0, 255, 162);
-    } */
 
     .flex-item1{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
@@ -588,21 +621,18 @@ footer{
     .flex-item14{
         flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
     }
+    .flex-item15{
+        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+    }
 }
 
 /* Large */
 @media screen and (max-width: 992px) {
-    /* body {
-      background-color: rgb(255, 81, 0);
-    } */
 
 }
 
 /* Medium */
 @media screen and (max-width: 768px) {
-    /* body {
-      background-color: rgb(255, 0, 191);
-    } */
     
     .flex-item1{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
@@ -644,6 +674,9 @@ footer{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item14{
+        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item15{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
@@ -694,6 +727,9 @@ footer{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
     .flex-item14{
+        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    }
+    .flex-item15{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
 }
